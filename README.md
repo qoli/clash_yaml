@@ -11,3 +11,4 @@ payload:
   - DOMAIN-SUFFIX,huggingface.co
   - DOMAIN-SUFFIX,hf.co
   - DOMAIN-SUFFIX,cas-bridge.xethub.hf.co
+  - DOMAIN-SUFFIX,apple-relay.apple.com
