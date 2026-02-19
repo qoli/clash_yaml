@@ -1,15 +1,25 @@
 payload:
+  # ===== AI =====
   - DOMAIN-SUFFIX,huggingface.co
   - DOMAIN-SUFFIX,hf.co
-  - DOMAIN-SUFFIX,cas-bridge.xethub.hf.co
-  - DOMAIN-KEYWORD,apple-relay
-  - DOMAIN,guzzoni.apple.com
+  - DOMAIN-SUFFIX,xethub.hf.co
+  - DOMAIN-SUFFIX,cerebras.ai
+
+  # ===== Apple Siri =====
+  - DOMAIN-SUFFIX,guzzoni.apple.com
   - DOMAIN-SUFFIX,smoot.apple.com
+  - DOMAIN-SUFFIX,gspe1-ssl.ls.apple.com
+  - DOMAIN-SUFFIX,gsp-ssl.ls.apple.com
+
+  # ===== Apple Private Relay（核心保险规则）=====
+  - DOMAIN-KEYWORD,apple-relay
+
+  # 已知 Relay CDN（避免漏流量）
+  - DOMAIN-SUFFIX,apple-relay.apple.com
   - DOMAIN-SUFFIX,apple-relay.cloudflare.com
   - DOMAIN-SUFFIX,apple-relay.fastly-edge.com
+  - DOMAIN-SUFFIX,apple-relay.akamaized.net
+  - DOMAIN-SUFFIX,apple-dns.net
+
+  # Relay 使用的 Cloudflare 边缘
   - DOMAIN-SUFFIX,cp4.cloudflare.com
-  - DOMAIN,apple-relay.apple.com
-  - DOMAIN-SUFFIX,gspe1-ssl.ls.apple.com
-  - DOMAIN,gsp-ssl.ls.apple.com
-  - DOMAIN-SUFFIX,cerebras.ai
-  - DOMAIN,gspe1-ssl.ls.apple.com
