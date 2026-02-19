@@ -8,7 +8,8 @@ payload:
   - DOMAIN-SUFFIX,apple-relay.cloudflare.com
   - DOMAIN-SUFFIX,apple-relay.fastly-edge.com
   - DOMAIN-SUFFIX,cp4.cloudflare.com
-  - DOMAIN-SUFFIX,apple-relay.apple.com
+  - DOMAIN,apple-relay.apple.com
   - DOMAIN-SUFFIX,gspe1-ssl.ls.apple.com
-  - DOMAIN-SUFFIX,gsp-ssl.ls.apple.com
+  - DOMAIN,gsp-ssl.ls.apple.com
   - DOMAIN-SUFFIX,cerebras.ai
+  - DOMAIN,gspe1-ssl.ls.apple.com
